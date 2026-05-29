@@ -196,7 +196,7 @@ h1 {
 
 .section-3>div {
   display: flex;
-  padding: 50px 0px;
+  padding: 50px 50px;
   /* if we target padding top-bottom (value 1), we must also target padding left-right(value 2) */
   gap: 66px;
   width: 100%;
@@ -211,11 +211,13 @@ h1 {
   align-items: center;
   justify-self: center;
   width: 100%;
+  flex: 1;
 }
 
-.section-3>div>image {
-  width: min(302.67px, 100%);
-  height: 302.67px;
+.img {
+  /* width: min(302.67px, 100%); */
+  width: 100%;
+  height: auto;
 }
 
 .section-3 p {
@@ -351,12 +353,21 @@ footer .socials svg {
 
 @media (max-width: 1024px) {
   h1 {
-    font-size: 64px;
+    font-size: 96px;
+    line-height: 100px;
   }
 
   h2 {
-    font-size: 48px;
+    font-size: 64px;
     overflow-wrap: break-word;
+  }
+
+  .section-2>div>h2 {
+    line-height: 70px;
+  }
+
+  .section-2 {
+    height: 1000px;
   }
 
   .section-3>div {
@@ -370,6 +381,37 @@ footer .socials svg {
   }
 
   form {
-    width: 100%;
+    width: min(600px, 100%);
+  }
+}
+
+@media (max-width: 780px) {
+  h1 {
+    font-size: 64px;
+    line-height: 80px;
+  }
+
+  .carousel {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  header select {
+    display: none;
+  }
+
+  .citysport-logo {
+    margin-left: 20px;
+  }
+
+  .section-1>div {
+    display: column;
+    align-items: center;
+  }
+
+  .section-1 h1 {
+    text-align: center;
+    line-height: 70px;
   }
 }
