@@ -11,6 +11,7 @@
   margin: 0px;
   font-family: Montserrat;
   box-sizing: border-box;
+  outline: 1px solid red;
 }
 
 body {
@@ -18,6 +19,7 @@ body {
   flex-direction: column;
   align-items: center;
   /* justify-self: center; */
+  /* overflow-x: hidden; */
 }
 
 header {
@@ -153,6 +155,7 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
 }
 
 .section-2>div>h2 {
@@ -196,6 +199,7 @@ h1 {
   padding: 50px 0px;
   /* if we target padding top-bottom (value 1), we must also target padding left-right(value 2) */
   gap: 66px;
+  width: 100%;
 }
 
 .section-3>div>div {
@@ -206,10 +210,11 @@ h1 {
   background-color: var(--img-background);
   align-items: center;
   justify-self: center;
+  width: 100%;
 }
 
 .section-3>div>image {
-  width: 302.67px;
+  width: min(302.67px, 100%);
   height: 302.67px;
 }
 
@@ -346,7 +351,12 @@ footer .socials svg {
 
 @media (max-width: 1024px) {
   h1 {
-    font-size: 36px;
+    font-size: 64px;
+  }
+
+  h2 {
+    font-size: 48px;
+    overflow-wrap: break-word;
   }
 
   .section-3>div {
