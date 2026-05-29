@@ -1,0 +1,365 @@
+:root {
+  --bckgrnd: rgba(0.3, 0.3, 0.3, 1);
+  --white: rgba(255, 255, 255, 1);
+  --black: rgba(0.3, 0.3, 0.3, 1);
+  --grey: #d9d9d9;
+  --img-background: #e5e5e5;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Montserrat;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-self: center; */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bckgrnd);
+  padding: 10px 20px;
+  width: 100%;
+  max-width: 1440px;
+}
+
+section {
+  /* width: min(1440px, 100%);  */
+  width: 100%;
+  max-width: 1440px;
+  /* apparently this syntax for responsiveness is better than the first one   */
+}
+
+button {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.line-1,
+.line-2 {
+  background-color: var(--white);
+  height: 2px;
+  width: 25px;
+  border: none;
+}
+
+.citysport-logo {
+  margin-left: 120px;
+}
+
+.lang-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+select {
+  padding: 8px 10px;
+  gap: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: var(--bckgrnd);
+  color: var(--white);
+  border-radius: 10px;
+}
+
+.section-1 {
+  background-color: var(--bckgrnd);
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 128px;
+  font-weight: 900;
+  line-height: 130px;
+  color: var(--white);
+}
+
+.section-1>div {
+  padding: 50px;
+  gap: auto;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  /* diff between overflow-x and overflow: hidden */
+  /* border: 2px solid red; */
+}
+
+.carousel::-webkit-scrollbar {
+  /* learn about this webkitscroll bar */
+  display: none;
+}
+
+.logos {
+  display: flex;
+  padding: 50px 0px;
+  gap: 50px;
+  /* check for this */
+  animation: spin 30s infinite linear;
+  padding-right: 20px;
+  /* we don't put a gap between the 2 logos div on the carousle because it can be off putting visually */
+}
+
+/* the @...are like functions but for css */
+
+@keyframes spin {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+
+  /* je comprends unpeu */
+}
+
+.logos>img {
+  width: 150px;
+  height: auto;
+}
+
+.section-2 {
+  height: 752px;
+  background-image: linear-gradient(rgba(0.3, 0.3, 0.3, 0.3), rgba(0.3, 0.3, 0.3, 0.3)), url(./ayanda-kunene-MbPsnFPnnRU-unsplash.jpg);
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 30%;
+  /* learned something new */
+  display: flex;
+  align-items: last baseline;
+  /* new prop to put content vertically bottom: align-times: last-baseline; */
+  padding: 50px;
+}
+
+.section-2>div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-2>div>h2 {
+  font-weight: 900;
+  font-size: 96px;
+  color: var(--white);
+  line-height: 90px;
+}
+
+.section-2>div>p {
+  font-weight: 500;
+  font-size: 16pxpx;
+  color: var(--white);
+}
+
+.section-2>div>button {
+  padding: 9px 15px;
+  color: var(--bckgrnd);
+  background-color: var(--white);
+  border-radius: 100px;
+  border: none;
+  width: fit-content;
+  font-weight: 500;
+}
+
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.section-3>h1 {
+  color: var(--black);
+}
+
+.section-3>div {
+  display: flex;
+  padding: 50px 0px;
+  /* if we target padding top-bottom (value 1), we must also target padding left-right(value 2) */
+  gap: 66px;
+}
+
+.section-3>div>div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px;
+  background-color: var(--img-background);
+  align-items: center;
+  justify-self: center;
+}
+
+.section-3>div>image {
+  width: 302.67px;
+  height: 302.67px;
+}
+
+.section-3 p {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.section-3 button {
+  padding: 9px 15px;
+  color: var(--bckgrnd);
+  background-color: var(--white);
+  border-radius: 100px;
+  border: none;
+  width: fit-content;
+  font-weight: 500;
+}
+
+footer {
+  background-color: var(--bckgrnd);
+  padding: 150px 50px;
+  display: flex;
+  /* display: grid;
+  grid-template-columns: 686px 686px; */
+  column-gap: 50px;
+  /* height: 600px; */
+  /* flex-wrap: wrap-reverse; */
+  justify-content: center;
+  align-items: center;
+  /* width: min(1440px, 100%); */
+  width: 100%;
+  max-width: 1440px;
+  /* flex-wrap: wrap; */
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.socials {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.contact-info>div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: fit-content;
+}
+
+.contact-info p {
+  color: var(--white);
+  font-size: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 30px;
+  border: 2px solid var(--img-background);
+  border-radius: 10px;
+  /* flex: 1; */
+  /* width: 100%;
+  min-width: 660px; */
+  width: clamp(300px, 600px, 660px);
+  background-color: rgba(255, 255, 255, 0.1);
+  height: fit-content;
+}
+
+form>div {
+  /* width: 100%; */
+  background-color: transparent;
+  height: fit-content;
+  border: 2px solid var(--img-background);
+  padding: 3px 3px;
+  display: flex;
+  /* width: fit-content; */
+}
+
+form input {
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 3px 10px;
+}
+
+/* to target the input when its active or being used(focused) */
+form input:focus {
+  background-color: var(--white);
+}
+
+form button {
+  width: fit-content;
+  background-color: var(--black);
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  font-weight: 300;
+}
+
+footer .contact-info svg {
+  fill: var(--white);
+  width: 21px;
+  height: 21px;
+  /* it is possible that height might just need to be a strict value */
+}
+
+footer .socials svg {
+  fill: var(--white);
+  width: 30px;
+  height: 30px;
+  /* it is possible that height might just need to be a strict value */
+  padding: 20px;
+  border-radius: 100px;
+  border: none;
+  background-color: #d9d9d9;
+}
+
+/* diff between svg and use */
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  .section-3>div {
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px 20px;
+  }
+
+  form {
+    width: 100%;
+  }
+}
