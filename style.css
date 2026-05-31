@@ -371,6 +371,10 @@ footer .socials svg {
   }
 
   .section-3>div {
+    width: min(600px, 100%);
+  }
+
+  .section-3>div {
     flex-direction: column;
   }
 
@@ -386,23 +390,34 @@ footer .socials svg {
 }
 
 @media (max-width: 780px) {
-  h1 {
-    font-size: 64px;
-    line-height: 80px;
-  }
-
-  .carousel {
-    padding: 20px;
-  }
-}
-
-@media (max-width: 450px) {
   header select {
     display: none;
   }
 
   .citysport-logo {
-    margin-left: 20px;
+    margin-left: 30px;
+  }
+
+  h1 {
+    font-size: 64px;
+    line-height: 65px;
+  }
+
+  .carousel {
+    padding: 20px;
+  }
+
+  .section-2>div>h2 {
+    font-size: 80px;
+    /* line-height: 45px; */
+  }
+}
+
+@media (max-width: 450px) {
+
+  h1 {
+    font-size: 48px;
+    /* line-height: 80px; */
   }
 
   .section-1>div {
@@ -412,6 +427,11 @@ footer .socials svg {
 
   .section-1 h1 {
     text-align: center;
-    line-height: 70px;
+    line-height: 50px;
+  }
+
+  .section-2>div>h2 {
+    font-size: 44px;
+    line-height: 45px;
   }
 }
