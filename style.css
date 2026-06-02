@@ -423,7 +423,7 @@ footer .socials svg {
     text-align: center;
   }
 
-  .section-1>div {
+  .intro {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -517,5 +517,15 @@ footer .socials svg {
   .section-2 {
     /* height: 1000px; */
     padding: 25px;
+  }
+
+  .carousel {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .logos {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
