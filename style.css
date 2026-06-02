@@ -86,6 +86,15 @@ select {
   flex-direction: column;
 }
 
+.section-1 svg {
+  fill: white;
+  width: 60px;
+  height: 60px;
+  border: 2px solid white;
+  padding: 15px;
+  border-radius: 100px;
+}
+
 h1 {
   font-size: 128px;
   font-weight: 900;
@@ -96,6 +105,51 @@ h1 {
 .section-1>div {
   padding: 50px;
   gap: auto;
+}
+
+.current-image {
+  width: min(150px, 100%)
+}
+
+.section-1>div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 50px; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.shoes-n-directions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.shoe-name-color {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px
+}
+
+h3,
+h4 {
+  color: white;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: 300;
 }
 
 .carousel {
@@ -353,14 +407,25 @@ footer .socials svg {
 /* diff between svg and use */
 
 @media (max-width: 1024px) {
-  h1 {
-    font-size: 96px;
+  /* h1 {
+    font-size: 128px;
     line-height: 100px;
-  }
+  } */
 
   h2 {
     font-size: 64px;
     overflow-wrap: break-word;
+  }
+
+  .section-1 h1 {
+    text-align: center;
+  }
+
+  .section-1>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
   }
 
   .section-2>div>h2 {
@@ -396,8 +461,8 @@ footer .socials svg {
   }
 
   h1 {
-    font-size: 64px;
-    line-height: 65px;
+    font-size: 96px;
+    line-height: 90px;
   }
 
   .carousel {
@@ -410,26 +475,32 @@ footer .socials svg {
   }
 }
 
-@media (max-width: 450px) {
-
+@media (max-width: 650px) {
   h1 {
     font-size: 48px;
-    /* line-height: 80px; */
-  }
-
-  .section-1>div {
-    display: column;
-    align-items: center;
-  }
-
-  .section-1 h1 {
-    text-align: center;
     line-height: 50px;
   }
 
-  .section-2 {
-    /* height: 1000px; */
-    padding: 25px;
+  .section-1 svg {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .section-1 svg {
+    width: 30px;
+    height: 30px;
+    padding: 7px;
   }
 
   .section-2>div>h2 {
@@ -437,4 +508,8 @@ footer .socials svg {
     line-height: 45px;
   }
 
+  .section-2 {
+    /* height: 1000px; */
+    padding: 25px;
+  }
 }
