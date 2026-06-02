@@ -103,12 +103,14 @@ h1 {
 }
 
 .section-1>div {
+  display: flex;
+  align-items: center;
   padding: 50px;
   gap: auto;
 }
 
 .current-image {
-  width: min(150px, 100%)
+  width: min(250px, 100%)
 }
 
 .section-1>div {
@@ -493,6 +495,10 @@ footer .socials svg {
 
   h4 {
     font-size: 20px;
+  }
+
+  .current-image {
+    width: min(150px, 100%)
   }
 }
 
