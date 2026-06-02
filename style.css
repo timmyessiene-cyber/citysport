@@ -42,6 +42,7 @@ section {
 button {
   font-size: 16px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .menu {
@@ -340,8 +341,10 @@ footer .contact-info svg {
 
 footer .socials svg {
   fill: var(--white);
-  width: 30px;
-  height: 30px;
+  width: 70px;
+  /* width: fit-content; */
+  height: 70px;
+  /* height: auto; */
   /* it is possible that height might just need to be a strict value */
   padding: 20px;
   border-radius: 100px;
@@ -364,10 +367,6 @@ footer .socials svg {
 
   .section-2>div>h2 {
     line-height: 70px;
-  }
-
-  .section-2 {
-    height: 1000px;
   }
 
   .section-3>div {
@@ -395,7 +394,7 @@ footer .socials svg {
   }
 
   .citysport-logo {
-    margin-left: 30px;
+    margin-left: 13px;
   }
 
   h1 {
@@ -430,8 +429,14 @@ footer .socials svg {
     line-height: 50px;
   }
 
+  .section-2 {
+    /* height: 1000px; */
+    padding: 25px;
+  }
+
   .section-2>div>h2 {
     font-size: 44px;
     line-height: 45px;
   }
+
 }
