@@ -342,9 +342,7 @@ footer .contact-info svg {
 footer .socials svg {
   fill: var(--white);
   width: 70px;
-  /* width: fit-content; */
   height: 70px;
-  /* height: auto; */
   /* it is possible that height might just need to be a strict value */
   padding: 20px;
   border-radius: 100px;
