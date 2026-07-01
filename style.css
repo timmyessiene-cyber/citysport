@@ -22,6 +22,35 @@ body {
   /* overflow-x: hidden; */
 }
 
+.loader {
+  display: flex;
+  background-color: var(--bckgrnd);
+  position: fixed;
+  z-index: 999999;
+  inset: 0;
+  /* inset:0
+  top:0;
+left:0;
+right:0;
+bottom:0;
+So it covers the entire page. */
+  justify-content: center;
+  align-items: center;
+
+  transition: 1s ease;
+  /* this is a short hand for transition: all 1s ease, no property specified means animate the entire element */
+  /* js is able to understand what we are talking about because we've targetted the thing(loader.style.opacity & loader.classList.add("")). that's how it knows where to end */
+}
+
+.img-loader {
+  width: 500px;
+  margin-left: 15px;
+}
+
+.hide {
+  transform: translateY(-100%);
+}
+
 header {
   display: flex;
   justify-content: space-between;
