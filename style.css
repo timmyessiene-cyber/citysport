@@ -37,7 +37,7 @@ So it covers the entire page. */
   justify-content: center;
   align-items: center;
 
-  transition: 1s ease;
+  transition: 2s ease;
   /* this is a short hand for transition: all 1s ease, no property specified means animate the entire element */
   /* js is able to understand what we are talking about because we've targetted the thing(loader.style.opacity & loader.classList.add("")). that's how it knows where to end */
 }
@@ -550,5 +550,11 @@ footer .socials svg {
   .logos {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .intro {
+    padding: 50px 20px;
   }
 }
