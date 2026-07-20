@@ -427,6 +427,11 @@ footer .socials svg {
   border-radius: 100px;
   border: none;
   background-color: #d9d9d9;
+  transition: scale 0.4s ease;
+}
+
+footer .socials svg:hover {
+  scale: 1.08;
 }
 
 /* diff between svg and use */
