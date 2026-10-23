@@ -313,6 +313,12 @@ h4 {
   border: none;
   width: fit-content;
   font-weight: 500;
+  transition: 0.4s ease;
+}
+
+.section-3 button:hover {
+  scale: 1.05;
+  cursor: pointer;
 }
 
 footer {
@@ -432,6 +438,7 @@ footer .socials svg {
 
 footer .socials svg:hover {
   scale: 1.08;
+  cursor: pointer;
 }
 
 /* diff between svg and use */
